@@ -1,0 +1,26 @@
+schema_version: 1
+self_judgement:
+  threshold: 0.7
+  mode: symmetric_confident
+experiments:
+  layer_window: [0.40, 0.80]
+  grouped_cv_folds: 5
+inference:
+  primary_bootstrap_repetitions: 1000
+  sensitivity_bootstrap_repetitions: 100
+  seeds:
+    id_all_layer: 42
+    grouped_exp2a: 20260707
+    joint_source_target: 20260712
+    source_question_fe: 20260715
+    main_controls: 20260707
+    ood_all_layer: 20260702
+    ood_controls: 20260705
+models:
+  - qwen25_7b
+  - llama31_8b
+  - qwen25_14b
+  - olmo3_7b_it
+domains:
+  in_distribution: [math, movies]
+  out_of_distribution: [mmlu, truthfulqa_binary]

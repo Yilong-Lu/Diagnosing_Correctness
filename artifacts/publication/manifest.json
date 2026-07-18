@@ -1,0 +1,161 @@
+{
+  "files": [
+    {
+      "bytes": 3405,
+      "release_file": "bc_matching_diagnostics.csv",
+      "sha256": "10fa75451fa0361bd15cd6ff9fab1442dc295f5c38d35453e841c6fb36e4bb99",
+      "source_role": "B/C token-count matching control"
+    },
+    {
+      "bytes": 87528,
+      "release_file": "exp2a_grouped_all_layers.csv",
+      "sha256": "9229a7676a3f45484df11095edd65e988b14bcebd27ce46d37ec54145daf5ef5",
+      "source_role": "grouped Exp2A all-layer estimates"
+    },
+    {
+      "bytes": 3304,
+      "release_file": "exp2a_grouped_window.csv",
+      "sha256": "ec055cffcf53ef8c1c32e97d37a9a1bfed9d9098667d63f6e939e93bf31735ec",
+      "source_role": "grouped Exp2A fixed-window summary"
+    },
+    {
+      "bytes": 2972,
+      "release_file": "exp2b_joint_source_target_window.csv",
+      "sha256": "fa114ccaac50b2ba0e8d8cf8180970529c7263c07248d96a80419f92a8053a73",
+      "source_role": "primary Exp2B joint source-target bootstrap"
+    },
+    {
+      "bytes": 5962,
+      "release_file": "exp2b_peak_summary.csv",
+      "sha256": "e0e9fd85ced1d33b02c23b6803313f983496dcb3dbe3e863a7e16330e7ac554d",
+      "source_role": "descriptive Exp2B peak summary"
+    },
+    {
+      "bytes": 166047,
+      "release_file": "id_all_layer_question_cluster_intervals.csv",
+      "sha256": "963986e5e22e7bb12c3b6dc536732779631ac4567545be93b66a16cc5e971f63",
+      "source_role": "ID all-layer Exp1 and Exp2B estimates"
+    },
+    {
+      "bytes": 1296,
+      "release_file": "id_attrition.csv",
+      "sha256": "fd22dfb52465c63a1b7ad9485b53e62600d1cf12f6ad6d771dc8d6adab5790d3",
+      "source_role": "ID sample construction and attrition"
+    },
+    {
+      "bytes": 4713,
+      "release_file": "judgement_scoring_rule_audit.csv",
+      "sha256": "c0056a7db6849d255a731fb95ed166b9c239fcf5639b5461608f83d3d4a16929",
+      "source_role": "fixed-logit judgement scoring-rule audit"
+    },
+    {
+      "bytes": 3768,
+      "release_file": "main_answer_logp_controls.csv",
+      "sha256": "0300848e567b78bd054889dbc1e17c73341f88d7d5fa0abe3e1d33a59eb2b7a3",
+      "source_role": "main-domain answer-likelihood control"
+    },
+    {
+      "bytes": 3167,
+      "release_file": "movies_multireference_exp2b.csv",
+      "sha256": "0d9fcf2185509fa7dd9a82c17c864985deedb444dfd0f5d612a9f282a88012de",
+      "source_role": "Movies multi-reference Exp2B sensitivity"
+    },
+    {
+      "bytes": 311,
+      "release_file": "movies_multireference_sample_flow.csv",
+      "sha256": "f3426b81b762928da864d6157bb1117dd462c32b3e1783c2a8dc80088f065a19",
+      "source_role": "Movies multi-reference filtering sample flow"
+    },
+    {
+      "bytes": 1532,
+      "release_file": "oc_only_window.csv",
+      "sha256": "62a2f6157277bcf4353ed2aab71fb19e88fd9f5be4302d11cf80aed4583bf098",
+      "source_role": "OC-only mass-mean control"
+    },
+    {
+      "bytes": 249477,
+      "release_file": "ood_all_layer_transfer.csv",
+      "sha256": "885fb90ace1fb2ebba4b7148b6c10c8180c0d0fb5749de7fc5f98e98658e7a14",
+      "source_role": "OOD all-layer component transfer"
+    },
+    {
+      "bytes": 11442,
+      "release_file": "ood_answer_logp_controls.csv",
+      "sha256": "414a94bdfe0f1f12e2220c6736f8fba3c864de27b877aa0871e0ef495ff09f29",
+      "source_role": "OOD answer-likelihood control"
+    },
+    {
+      "bytes": 12439,
+      "release_file": "ood_counterbalanced_controls.csv",
+      "sha256": "84a8995081b6f9225118461e3e82390f69526d3ce420965126b7bf9d324004e9",
+      "source_role": "counterbalanced OOD elicitation control"
+    },
+    {
+      "bytes": 252069,
+      "release_file": "ood_counterbalanced_all_layer_transfer.csv",
+      "sha256": "770492db162e68582c06d70f2070612abe0ac58cde8ab545dcb5b41e625781cf",
+      "source_role": "counterbalanced OOD all-layer component transfer"
+    },
+    {
+      "bytes": 1404,
+      "release_file": "ood_counterbalanced_diagnostics.csv",
+      "sha256": "9a2313d0f90990b2129528cbbadd6a9a10477026e38b33f68078ac97d3293253",
+      "source_role": "counterbalanced OOD label diagnostics"
+    },
+    {
+      "bytes": 514,
+      "release_file": "ood_heterogeneity.csv",
+      "sha256": "4278bd55fda48172ba90ecffa2ec5fca4ee2bd4ce9d1271459395daba7bd8bf2",
+      "source_role": "OOD support and layer heterogeneity"
+    },
+    {
+      "bytes": 12677,
+      "release_file": "question_fe_coefficients.csv",
+      "sha256": "f1966dd4608f4822b29bf76922dfcf2748ccfc833b4769a7b5847344739c2a0b",
+      "source_role": "complete question fixed-effect coefficient matrix"
+    },
+    {
+      "bytes": 3034,
+      "release_file": "question_fe_contrast.csv",
+      "sha256": "f2cbb4d39744714117a4b6bb6d98389f81c3f1d97af8367c3f63003eaadbe4b3",
+      "source_role": "question fixed-effect control"
+    },
+    {
+      "bytes": 973,
+      "release_file": "qwen25_7b_r2_exp2b.csv",
+      "sha256": "69400eb281bcbd9100f14d3c73fc020be881773823c4e759bdf42b9ecbcd05f8",
+      "source_role": "Qwen2.5-7B second strict-pair draw Exp2B sensitivity"
+    },
+    {
+      "bytes": 334,
+      "release_file": "qwen25_7b_r2_sample_flow.csv",
+      "sha256": "c7f8c52d8e3556e6d386a48bad41e077dce58d10b6ae6ee75707dc6a482136f5",
+      "source_role": "Qwen2.5-7B second strict-pair draw sample flow"
+    },
+    {
+      "bytes": 3176,
+      "release_file": "source_question_fe_window.csv",
+      "sha256": "4b6f782904fe7b08d00d7e1235e558a8813b4d96bcb4f843362512a577d1d2a9",
+      "source_role": "source-question-adjusted direction sensitivity"
+    },
+    {
+      "bytes": 5432,
+      "release_file": "threshold_counts.csv",
+      "sha256": "5a6ca576c54e8793c22f04b1b99fc2cd9b9b190e5c68a74bc2dc49c17aee0a67",
+      "source_role": "symmetric confidence-threshold support"
+    },
+    {
+      "bytes": 794041,
+      "release_file": "threshold_exp2b_all_layers.csv",
+      "sha256": "ba75af037090503e682556b53c114f81521928793fc402ff64bf3f5dbb293c4c",
+      "source_role": "threshold-sensitivity all-layer Exp2B results"
+    },
+    {
+      "bytes": 3633,
+      "release_file": "window_null_controls.csv",
+      "sha256": "31b758bf952bc93035375c047fa52df739f4ad7bd3f985714cbdb3cdc05e76ce",
+      "source_role": "fixed-window null controls"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,22 @@
+schema_version: 1
+models:
+  qwen25_7b:
+    display_name: Qwen2.5-7B-Instruct
+    model_id: Qwen/Qwen2.5-7B-Instruct
+    revision: null
+    batch_size: 4
+  llama31_8b:
+    display_name: Llama-3.1-8B-Instruct
+    model_id: meta-llama/Llama-3.1-8B-Instruct
+    revision: null
+    batch_size: 4
+  qwen25_14b:
+    display_name: Qwen2.5-14B-Instruct
+    model_id: Qwen/Qwen2.5-14B-Instruct
+    revision: null
+    batch_size: 2
+  olmo3_7b_it:
+    display_name: OLMo-3-7B-Instruct
+    model_id: allenai/Olmo-3-7B-Instruct
+    revision: null
+    batch_size: 4

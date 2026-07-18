@@ -1,0 +1,3 @@
+model,domain,seed,original_pairs,both_changed_pairs,correct_only_changed_pairs,incorrect_only_changed_pairs,unchanged_pairs,at_least_one_changed_pairs,at_least_one_changed_fraction,strict_pairs_tau07
+qwen25_7b,math,2027,2703,868,998,575,262,2441,0.903070662227155,2289
+qwen25_7b,movies,2027,1101,10,11,624,456,645,0.5858310626703,907

@@ -1,0 +1,9 @@
+model,target,rows,mean_delta_auc,positive_rows,ci_above_zero_rows,n_B,n_C,n_BC,n_questions
+llama31_8b,mmlu,64,0.206,47,31,13,403,416,252
+llama31_8b,truthfulqa_binary,64,0.267,53,46,357,160,517,459
+olmo3_7b_it,mmlu,64,0.223,57,44,70,128,198,160
+olmo3_7b_it,truthfulqa_binary,64,0.228,54,42,448,84,532,476
+qwen25_14b,mmlu,96,0.207,69,48,169,75,244,205
+qwen25_14b,truthfulqa_binary,96,0.357,91,66,383,48,431,388
+qwen25_7b,mmlu,56,0.072,43,12,112,189,301,224
+qwen25_7b,truthfulqa_binary,56,0.154,44,29,401,147,548,483

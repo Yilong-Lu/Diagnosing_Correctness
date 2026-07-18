@@ -1,0 +1,5 @@
+model,filtered_movies_rows,original_movies_rows,removed_bc_rows,removed_fraction,removed_prompts,removed_rows
+qwen25_7b,1780,1824,11,0.02412280701754386,19,44
+llama31_8b,5480,5560,39,0.014388489208633094,37,80
+qwen25_14b,3266,3320,20,0.016265060240963854,27,54
+olmo3_7b_it,1002,1016,6,0.013779527559055118,7,14

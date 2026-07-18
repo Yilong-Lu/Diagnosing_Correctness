@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Generated outputs and large hidden-state artifacts
+outputs/
+activations/
+*.npz
+*.pt
+*.pth
+*.safetensors
+
+# Locally imported restricted or license-pending data
+data/private/
+data/staging/
+
+# Editors and operating systems
+.DS_Store
+*~
