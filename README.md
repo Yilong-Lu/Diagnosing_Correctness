@@ -7,6 +7,8 @@ validation, cross-domain
 transfer analyses, data-construction checks, robustness controls, and manuscript
 figure/table builders.
 
+Paper: [arXiv:2607.16799](https://arxiv.org/abs/2607.16799)
+
 ## Reproduction levels
 
 The repository separates three levels of reproduction because full hidden-state
@@ -64,15 +66,6 @@ Movies multi-reference checks are exposed through `metacog-robustness`.
 Each response has objective correctness `OC` and a thresholded self-judgement
 label `SJ`. With cells A=(1,1), B=(1,0), C=(0,1), and D=(0,0), the directions are
 
-| Paper notation | Code and artifact field | Construction |
-| --- | --- | --- |
-| `W_SJ` | `W_meta` | Factorial self-judgement main-effect direction |
-| `W_OC` | `W_truth` | Factorial objective-correctness main-effect direction |
-
-The reader-facing notation follows the operational variables studied in the
-paper. Historical field names are retained so that released artifacts and
-analysis code remain byte-compatible.
-
 ```text
 W_mix   = mean(A) - mean(D)
 W_meta  = 0.5 * ((mean(A) - mean(B)) + (mean(C) - mean(D)))
@@ -92,3 +85,17 @@ Generated metadata contains relative inputs, public model identifiers, explicit
 seeds, and file checksums. `data/README.md`, `data/manifest.csv`, and
 `docs/THIRD_PARTY.md` record benchmark provenance, applicable upstream terms,
 and source-level identifiers for the constituent Math datasets.
+
+## Citation
+
+```bibtex
+@misc{lu2026diagnosingcorrectnessprobesselfjudgement,
+  title={Diagnosing Correctness Probes under Self-Judgement Confounding},
+  author={Yi-Long Lu},
+  year={2026},
+  eprint={2607.16799},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2607.16799},
+}
+```
