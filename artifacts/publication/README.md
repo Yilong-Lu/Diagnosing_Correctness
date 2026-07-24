@@ -18,5 +18,6 @@ threshold sensitivity, matching, null, fixed-effect, likelihood, and OOD
 controls. The counterbalanced OOD all-layer table supports reconstruction of
 the corresponding supplementary curve figure. Additional tables record the
 fixed-logit judgement-scoring audit, Qwen2.5-7B strict-pair resampling, and
-Movies multi-reference sensitivity reported in Supplementary Sec. S8.7. These
-artifacts do not replace activation-level recomputation.
+Movies multi-reference sensitivity reported in Supplementary Sec. S8.7.
+Activation-level recomputation is supported separately through the documented
+extraction and analysis commands.

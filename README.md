@@ -20,10 +20,10 @@ artifacts are several gigabytes and are not stored in Git.
    from the released processed response records and public model checkpoints,
    score answer likelihoods, then run the same analysis pipeline.
 
-The Math pass-at-eight pilot used to select the frozen Math question set is
-provenance rather than the entry point of this artifact. Reproduction begins
-from the frozen processed question/response records. No claim is made that
-rerunning stochastic answer generation would recover byte-identical responses.
+The Math pass-at-eight pilot defines the provenance of the released Math
+question set. Reproduction begins from the processed question/response records
+used in the study, which are included under `data/processed` and serve directly
+as inputs to activation extraction and downstream analysis.
 
 ## Installation
 
@@ -64,6 +64,15 @@ Movies multi-reference checks are exposed through `metacog-robustness`.
 Each response has objective correctness `OC` and a thresholded self-judgement
 label `SJ`. With cells A=(1,1), B=(1,0), C=(0,1), and D=(0,0), the directions are
 
+| Paper notation | Code and artifact field | Construction |
+| --- | --- | --- |
+| `W_SJ` | `W_meta` | Factorial self-judgement main-effect direction |
+| `W_OC` | `W_truth` | Factorial objective-correctness main-effect direction |
+
+The reader-facing notation follows the operational variables studied in the
+paper. Historical field names are retained so that released artifacts and
+analysis code remain byte-compatible.
+
 ```text
 W_mix   = mean(A) - mean(D)
 W_meta  = 0.5 * ((mean(A) - mean(B)) + (mean(C) - mean(D)))
@@ -82,4 +91,4 @@ Model paths are supplied at runtime and are never stored as absolute paths.
 Generated metadata contains relative inputs, public model identifiers, explicit
 seeds, and file checksums. `data/README.md`, `data/manifest.csv`, and
 `docs/THIRD_PARTY.md` record benchmark provenance, applicable upstream terms,
-and the composition of the Math source mixture.
+and source-level identifiers for the constituent Math datasets.

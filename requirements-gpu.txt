@@ -1,5 +1,5 @@
-# GPU libraries are intentionally bounded rather than falsely pinned to an
-# unrecorded historical environment. Record exact versions for every rerun.
+# Compatible version ranges for GPU extraction. Record the resolved environment
+# when archiving a new activation run.
 torch>=2.1
 tqdm>=4.63,<5
 transformers>=4.45,<5

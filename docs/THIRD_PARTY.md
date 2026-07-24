@@ -25,11 +25,11 @@ identifiers, and filtering metadata to upstream question text.
 - The Math pool contains the source tags `amc`, `math`, `amc2023`, `math500`,
   `gsm8k`, `SVAMP`, `ASDiv`, and `MultiArith`. The `amc` and `math` imports came
   through the MIT-licensed DeepScaleR repository; GSM8K is MIT licensed. The
-  remaining word-problem imports are retained with source tags because their
-  historical acquisition snapshot did not preserve an immutable upstream
-  revision or a single common license. They must not be described as covered
-  by the project code's MIT license.
+  remaining word-problem imports retain their source tags and remain governed
+  by their respective upstream terms; they are not covered by the project
+  code's MIT license.
 
-The release manifest provides checksums for the exact transformed files.
+The release manifest provides checksums and source-family identifiers for the
+exact transformed files.
 Upstream benchmark and model terms continue to govern redistribution and use of
 their respective materials.

@@ -21,18 +21,17 @@ The processed JSON Lines contract and normalization commands are documented in
 `docs/DATA_SCHEMA.md`.
 Portable shell examples are provided in `examples/`.
 
-## Frozen inputs
+## Released analysis inputs
 
 The reproducible analysis begins from processed response records containing the
 question, answer, objective-correctness label, and continuous self-judgement
 probability. The primary strict sample is derived deterministically with the
 symmetric confidence rule at `tau=0.7`.
 
-The stochastic Math pilot, free-response generation, and realized draw of one
-correct and one incorrect response per eligible question are not replayed. Their
-outputs are frozen inputs because the historical pipeline did not record every
-source of nondeterminism and because model-serving stacks can change generated
-text even when a nominal seed is supplied.
+The released records fix the Math question set, generated responses, and
+realized correct/incorrect response pair used in the reported analyses. They
+provide the direct inputs for strict-sample construction, activation extraction,
+and all downstream estimators.
 
 The historical one-token self-judgement call retained up to four next-token
 log-probability candidates. When literal `Yes` and `No` were both present, their
@@ -43,22 +42,17 @@ continuous probability; the primary symmetric threshold at `tau=0.7` excludes
 the final-fallback value 0.5.
 
 The scoring-rule audit uses `metacog-score-judgement` to recompute literal `Yes`
-and `No` logits with one backend,
-then holds those logits fixed while comparing the historical candidate fallback
-with full binary normalization. Row-level logits are optional large diagnostic
-artifacts and are not included; `judgement_scoring_rule_audit.csv` contains the
-reported per-cell audit. The released command accepts the row-level JSON/JSONL
-schema when those artifacts are available.
+and `No` logits with one backend, then holds those logits fixed while comparing
+the historical candidate fallback with full binary normalization.
+`judgement_scoring_rule_audit.csv` contains the reported per-cell audit, and the
+released command accepts row-level JSON/JSONL records for regenerating the
+diagnostic from recomputed logits.
 
-The same boundary applies to correctness parsing, Yes/No self-judgement
-elicitation, and the X/Y counterbalanced OOD elicitation. The counterbalanced
-release contains the mapping-corrected self-judgement probability and exact
-retained candidates, but not the four raw XY/YX option log-probabilities for
-each pre-filter candidate. Activation extraction, answer-likelihood scoring,
-thresholding from the released balanced probabilities, and all reported
-activation analyses are rerunnable. This keeps
-the artifact faithful to the executed study instead of presenting a newly
-written generation pipeline as historical code.
+The counterbalanced release contains the mapping-corrected self-judgement
+probability and exact retained candidates. These records support thresholding,
+activation extraction, answer-likelihood scoring, and all reported
+counterbalanced activation analyses. Aggregate diagnostic tables are included
+with the publication artifacts.
 
 ## Data-construction robustness
 
@@ -97,13 +91,11 @@ Activations are residual-stream states at the output of each complete
 transformer block, evaluated at the final non-padding answer token. Forward
 passes use bfloat16 by default and arrays are stored as float16.
 
-Historical activation metadata did not preserve immutable model-repository
-snapshot revisions. Accordingly, `configs/models.yaml` leaves each `revision`
-field unset rather than assigning an unverified value. The released numerical
-artifacts make analyses of the existing activations auditable, but a fresh run
-that resolves a moving model identifier may not be byte-identical. New
-extraction runs should record the resolved checkpoint revision alongside the
-activation checksums.
+All extraction commands use the official public model identifiers listed in
+`configs/models.yaml`; no customized model weights are required. The optional
+`--revision` argument can pin a repository snapshot for archival runs. New
+activation artifacts record the supplied public model identifier and revision
+alongside file checksums.
 
 ## Statistical settings
 
